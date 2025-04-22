@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starter</title>
+</head>
+<link rel="stylesheet" href="../dishes.css">
+
+ <!-- fontawesome script tag -->
+ <script src="https://kit.fontawesome.com/ba2faaa4dd.js" crossorigin="anonymous"></script>
+
+ <!-- <link rel="stylesheet" href="../../../components/header/header.css">
+<link rel="stylesheet" href="../../../components/footer/footer.css"> -->
+
+<body>
+    <!-- header -->
+<div id="header-placeholder"></div>
+<!-- header -->
+
+
+<!-- main -->
+<section>
+
+
+
+    <!-- search-bar -->
+    <div class="search-bar">
+      <i class="fas fa-search" id="filter-serach"></i>
+  
+      <input type="text" placeholder="search foods..." id="search-text">
+    </div>
+
+    
+  <!-- filters -->
+  <div class="filters">
+    <div class="filter-group">
+    <h1 class="h1-font">Filter By</h1>
+    </div>
+
+    <div class="filter-group">
+        <h3>Food Type</h3>
+        <label> <input type="checkbox" name="food-type" value="all"> All</label>
+        <label> <input type="checkbox" name="food-type" value="veg"> Veg</label>
+        <label> <input type="checkbox" name="food-type" value="non-veg"> Non-Veg</label>
+    </div>
+
+   
+
+    <div class="filter-group">
+        <h3>Price Range</h3>
+        <select name="price">
+            <option value="under-300">Under ₹300</option>
+            <option value="above-300">Above ₹300</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <h3>Rating</h3>
+        <select name="ratings">
+            <option value="2-star">2★ & Above</option>
+            <option value="4-star">4★ & Above</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <h3>Stock Availability</h3>
+        <select name="availability">
+            <option value="sold-in">Sold-In</option>
+            <option value="sold-out">Sold-Out</option>
+        </select>
+    </div>
+
+
+    <div class="filter-group">
+    <h3>delivery Time</h3>
+    <select id="deliveryTimeFilter">
+        <option value="all">All</option>
+        <option value="fast">Fast Delivery (Under 30 mins)</option>
+        <option value="normal">Standard (30-60 mins)</option>
+        <option value="slow">Scheduled (1+ hour)</option>
+    </select>
+    </div>
+
+  
+</div>
+      
+
+</div>
+
+
+  <!-- menu items -->
+
+
+         <!-- Starter Section -->
+<div class="menu-section" data-category="starter">
+  <h1>Savor Starters 🍴</h1>
+  <!-- <div class="menu-items"> -->
+    <!-- <div class="menu-items"> -->
+   
+    <!-- Tandoori Mushroom Card -->
+<div class="menu-item" 
+data-name="tandoori mushroom"
+     data-type="veg"
+     data-price="239"
+     data-rating="4.6"
+     data-stock="in"
+     data-time="40"
+     data-discount="20"  >
+
+  <div class="img-container">
+    <img src="../../../assets/images/starter/tandoori-mushroom.avif" alt="tandoori-mushroom">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Tandoori Mushroom</h2>
+      <h2> ₹239</h2>
+      <h3>
+        Serves 1-2 | A smoky, spiced grilled mushroom dish perfect for starters. 
+        Grilled to perfection with aromatic spices for an irresistible taste. 
+        <br> <strong>Add extra toppings:</strong> Cheese, Jalapenos, Spicy Sauce (+₹30 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i>  4.6 •</span>
+        <span> 40-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+    
+
+  </div>
+</div>
+
+    
+    
+
+<!-- Paneer Tikka Card -->
+<div class="menu-item"  
+data-name="paneer tika"
+data-type="veg"
+data-price="99"
+data-rating="4.0"
+data-stock="in"
+data-time="40"
+data-discount="20"
+ >
+  <div class="img-container">
+    <img src="../../../assets/images/starter/paneer-tika.avif" alt="paneer-tikka">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Paneer Tikka</h2>
+      <h2> ₹99</h2>
+      <h3>
+        Serves 1-2 | Smoky and spicy marinated paneer grilled to perfection, infused with Indian spices.
+        <br> <strong>Add extra toppings:</strong> Cheese, Onion, Mint Sauce (+₹20 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i>  4.0 •</span>
+        <span> 40-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Chicken Lollipop Card -->
+<div class="menu-item" 
+     data-name="chicken lolipop"
+     data-type="veg"
+     data-price="350"
+     data-rating="5.0"
+     data-stock="in"
+     data-time="30"
+     data-discount="20"
+>
+  <div class="img-container">
+    <img src="../../../assets/images/starter/chicken-lolipop.avif" alt="chicken-lolipop">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Chicken Lollipop</h2>
+      <h2> ₹350</h2>
+      <h3>
+        Serves 2-3 | Juicy and crispy deep-fried chicken wings with a spicy coating, served with tangy dip.
+        <br> <strong>Add extra toppings:</strong> Extra Spicy, Garlic Mayo, Cheese Dip (+₹30 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle" style="color: red;"></i> Sold Out •</span>
+        <span><i class="fa-solid fa-star" id="star"></i>  5.0 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+
+      <!-- Cheese Balls Card -->
+<div class="menu-item" 
+
+data-name="cheese balls"
+     data-type="veg"
+     data-price="150"
+     data-rating="4.3"
+     data-stock="in"
+     data-time="45"
+     data-discount="30"
+
+ >
+  <div class="img-container">
+    <img src="../../../assets/images/starter/cheese-balls.avif" alt="cheese-balls">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Cheese Balls</h2>
+      <h2> ₹150</h2>
+      <h3>
+        Serves 1-2 | Crispy, deep-fried cheese balls with a golden crust and gooey center.
+        <br> <strong>Add extra dips:</strong> Garlic Mayo, Chipotle, Cheese Sauce (+₹20 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i>  4.3 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Veg Spring Rolls Card -->
+<div class="menu-item" 
+     data-name="veg spring roll"
+     data-type="veg"
+     data-price="200"
+     data-rating="4.5"
+     data-stock="in"
+     data-time="45"
+     data-discount="30"
+ >
+  <div class="img-container">
+    <img src="../../../assets/images/starter/veg-spring-roll.avif" alt="veg-spring-rolls">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Veg Spring Rolls</h2>
+      <h2> ₹200</h2>
+      <h3>
+        Serves 2-3 | Crunchy rolls filled with seasoned veggies, served with a tangy dip.
+        <br> <strong>Add extra dips:</strong> Hot Garlic, Sweet Chili, Schezwan (+₹20 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i>  4.5 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Hara Bhara Kabab Card -->
+<div class="menu-item" 
+data-name="hara bhara cabab"
+     data-type="veg"
+     data-price="180"
+     data-rating="4.2"
+     data-stock="in"
+     data-time="30"
+     data-discount="20"
+
+  >
+  <div class="img-container">
+    <img src="../../../assets/images/starter/hara-bhara-cabab.jpg" alt="hara-bhara-kabab">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Hara Bhara Kabab</h2>
+      <h2> ₹180</h2>
+      <h3>
+        Serves 1-2 | Healthy and flavorful spinach and green peas kababs, lightly spiced and grilled.
+        <br> <strong>Best with:</strong> Mint Chutney, Tamarind Sauce (+₹20 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i>  4.2 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+ 
+<!-- Veg Kebab Platter Card -->
+<div class="menu-item" 
+
+data-name="veg kebab platter"
+     data-type="veg"
+     data-price="280"
+     data-rating="4.5"
+     data-stock="in"
+     data-time="30"
+     data-discount="20"
+
+ >
+  <div class="img-container">
+    <img src="../../../assets/images/starter/Veg-Kebab-Platter.jpg" alt="veg-kebab-platter">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Veg Kebab Platter</h2>
+      <h2> ₹280</h2>
+      <h3>
+        Serves 2-3 | A mix of delicious veg kebabs, including Hara Bhara Kabab, Paneer Tikka, and more, served with chutney.
+        <br> <strong>Best with:</strong> Mint Chutney, Garlic Sauce (+₹25 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.5 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Mutton Seekh Kabab Card -->
+<div class="menu-item" 
+data-name="mutton seekh kabab"
+     data-type="non-veg"
+     data-price="400"
+     data-rating="5.0"
+     data-stock="in"
+     data-time="45"
+     data-discount="20"
+ >
+  <div class="img-container">
+    <img src="../../../assets/images/starter/mutton-seekh-kabab.avif" alt="mutton-seekh-kabab">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Mutton Seekh Kabab</h2>
+      <h2> ₹400</h2>
+      <h3>
+        Serves 2 | Soft and juicy minced mutton skewers, infused with rich spices and slow-grilled for a smoky flavor.
+        <br> <strong>Best with:</strong> Onion Rings, Spicy Mayo (+₹30 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 5.0 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+<!-- BBQ Chicken Wings Card -->
+<div class="menu-item" 
+
+data-name="bbq-chicken-wings"
+     data-type="non-veg"
+     data-price="99"
+     data-rating="4.7"
+     data-stock="in"
+     data-time="30"
+     data-discount="20"
+ >
+  <div class="img-container">
+    <img src="../../../assets/images/starter/bbq-chicken-wings.jpeg" alt="bbq-chicken-wings">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>BBQ Chicken Wings</h2>
+      <h2> ₹99</h2>
+      <h3>
+        Serves 1-2 | Tender and juicy chicken wings coated in a smoky BBQ glaze, grilled to perfection.
+        <br> <strong>Best with:</strong> Spicy Mayo, Garlic Dip (+₹25 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.7 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Dahi Ke Kabab Card -->
+<div class="menu-item" 
+data-name="dahi ke kabab"
+     data-type="veg"
+     data-price="230"
+     data-rating="4.3"
+     data-stock="in"
+     data-time="30"
+     data-discount="25"
+
+ >
+  <div class="img-container">
+    <img src="../../../assets/images/starter/dahi-ke-kabab.avif" alt="dahi-ke-kebab">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Dahi Ke Kabab</h2>
+      <h2> ₹230</h2>
+      <h3>
+        Serves 1-2 | Creamy, melt-in-mouth kababs made with hung curd, paneer, and aromatic spices, shallow-fried for a crispy texture.
+        <br> <strong>Best with:</strong> Mint Chutney, Tamarind Sauce (+₹20 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i>  4.3 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Crispy Corn Card -->
+<div class="menu-item" 
+
+data-name="crispy corn"
+     data-type="veg"
+     data-price="220"
+     data-rating="4.4"
+     data-stock="in"
+     data-time="45"
+     data-discount="15"
+ >
+  <div class="img-container">
+    <img src="../../../assets/images/starter/crispy-corn.jpg" alt="crispy-corn">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Crispy Corn</h2>
+      <h2> ₹220</h2>
+      <h3>
+        Serves 1-2 | Golden, crunchy sweet corn tossed in tangy and spicy seasonings, perfect for a crispy delight.
+        <br> <strong>Best with:</strong> Cheese Dip, Lemon Butter (+₹20 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i>  4.4 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+<!-- Fish Fingers Card -->
+<div class="menu-item" 
+
+data-name="fish finger"
+     data-type="non-veg"
+     data-price="280"
+     data-rating="4.7"
+     data-stock="in"
+     data-time="45"
+     data-discount="10"
+  >
+  <div class="img-container">
+    <img src="../../../assets/images/starter/fish-finger.jpg" alt="fish-fingers">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Fish Fingers</h2>
+      <h2> ₹380</h2>
+      <h3>
+        Serves 1-2 | Crispy, golden-brown fish fillets coated in a flavorful crumb mixture, fried to perfection.
+        <br> <strong>Best with:</strong> Tartar Sauce, Garlic Mayo (+₹30 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i>  4.7 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>   
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-deatils">Order Now</a>
+    </div>
+  </div>
+</div>
+    
+  <!-- </div> -->
+</div>
+
+
+
+</section>
+
+
+
+<section class="menu-pagination">
+  <nav>
+   
+    <a href="../menu.html"  target="_blank">   <i class="fa-solid fa-arrow-left"></i>  prev Page </a>
+    <a href="../breakfast/breakfast.html"  target="_blank">next Page  <i class="fa-solid fa-arrow-right"></i></a>
+ 
+  </nav>
+</section>
+
+<!-- main -->
+
+
+<!-- footer -->
+<div id="footer-placeholder"></div>
+<!-- footer -->
+ <script src="./starter.js"></script>
+  <script>
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+    
+          // ✅ Callback function execute karo agar diya hai
+          if (callback) callback();
+        })
+        .catch(error => console.error(`Error loading ${file}:`, error));
+    }
+    
+    // ✅ Load Header & Footer with Correct Paths
+    loadComponent("header-placeholder", "../../../components/header/header.html", function() {
+      loadHeaderScript();
+    });
+    
+    loadComponent("footer-placeholder", "../../../components/footer/footer.html", function() {
+      loadFooterScript();
+    });
+    
+    // ✅ Correct Header Script Path
+    function loadHeaderScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/header/header.js"; 
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+    // ✅ Correct Footer Script Path
+    function loadFooterScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/footer/footer.js"; 
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+  </script>
+
+</body>
+</html>

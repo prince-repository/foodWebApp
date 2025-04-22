@@ -1,0 +1,216 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/*
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+/*
+
+:root{
+  --media-1024-font-size:small;
+  --primary-color:deepskyblue;
+  --padding-container:0 7rem;
+  --padding-h1:4rem 0;
+  --text-color:black;
+  --font-family:'Roboto', sans-serif;
+--secondary-color:red;
+--hover-btn:darkred;
+--h1-size:35px;
+--h5-size:20px;
+--card-box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+/* body{
+  height: auto;
+} */
+
+
+/* footer section */
+/* Footer Styling */
+footer {
+  background:whitesmoke;
+  color:black;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.footer-section {
+  max-width: 250px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid red;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+
+
+.footer-section ul li a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: red;
+}
+
+
+
+.footer-section p a{
+  color:black;
+  text-decoration: none;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: red;
+}
+
+/* Newsletter Input */
+.footer-section input {
+  width: 80%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.footer-section button {
+  background: var(--secondary-color);
+  color:white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.footer-section button:hover {
+  background: darkred;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+}
+
+#backToTop {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#backToTop:hover {
+  background:darkred;
+}
+
+
+
+/* Footer Styling */
+
+
+@media screen and (max-width:768px){
+
+  footer{
+    padding: 30px 50px;
+  }
+
+ .footer-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  /* place-items: center; */
+ }
+
+ .footer-section h3{
+  font-size: 15px;
+ }
+
+ .footer-section ul li a,.footer-section p,.footer-section div a{
+font-size: small;
+ }
+
+}
+
+
+
+
+@media screen and (max-width:480px){
+
+
+
+ .footer-section h3{
+  font-size: 10px;
+ }
+
+ .footer-section input{
+  
+  font-size: x-small;
+ }
+ .social-icons a{
+  font-size: medium;
+ }
+
+ .footer-section button{
+  padding:7px 15px;
+  font-size: x-small;
+ }
+
+ .footer-section ul li a,.footer-section p,.footer-section div a{
+font-size: x-small;
+ }
+ .footer-bottom p{
+  font-size: small;
+ }
+
+ .footer-bottom #backToTop {
+  /* margin-top: 5px; */
+  padding: 7px 15px;
+  font-size: x-small;
+}
+
+#year{
+  font-size: small;
+}
+
+}

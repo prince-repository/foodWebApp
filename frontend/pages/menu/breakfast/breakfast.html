@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>breakfast</title>
+  <link rel="stylesheet" href="../dishes.css">
+   <!-- fontawesome script tag -->
+ <script src="https://kit.fontawesome.com/ba2faaa4dd.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../../../components/header/header.css">
+<link rel="stylesheet" href="../../../components/footer/footer.css">
+</head>
+<body>
+    <!-- header -->
+<div id="header-placeholder"></div>
+<!-- header -->
+
+
+<!-- main -->
+<section>
+
+    <!-- search-bar -->
+    <div class="search-bar">
+      <i class="fas fa-search"  id="filter-serach"></i>
+  
+      <input type="text" placeholder="search foods..." id="search-text">
+    </div>
+
+
+    
+  <!-- filters -->
+  <div class="filters">
+    <div class="filter-group">
+    <h1 class="h1-font">Filter By</h1>
+    </div>
+
+    <div class="filter-group">
+        <h3>Food Type</h3>
+        <label> <input type="checkbox" name="food-type" value="all"> All</label>
+        <label> <input type="checkbox" name="food-type" value="veg"> Veg</label>
+        <label> <input type="checkbox" name="food-type" value="non-veg"> Non-Veg</label>
+    </div>
+
+   
+
+    <div class="filter-group">
+        <h3>Price Range</h3>
+        <select name="price">
+            <option value="under-300">Under ₹300</option>
+            <option value="above-300">Above ₹300</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <h3>Rating</h3>
+        <select name="ratings">
+            <option value="2-star">2★ & Above</option>
+            <option value="4-star">4★ & Above</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <h3>Stock Availability</h3>
+        <select name="availability">
+            <option value="sold-in">Sold-In</option>
+            <option value="sold-out">Sold-Out</option>
+        </select>
+    </div>
+
+
+    <div class="filter-group">
+    <h3>delivery Time</h3>
+    <select id="deliveryTimeFilter">
+        <option value="all">All</option>
+        <option value="fast">Fast Delivery (Under 30 mins)</option>
+        <option value="normal">Standard (30-60 mins)</option>
+        <option value="slow">Scheduled (1+ hour)</option>
+    </select>
+    </div>
+
+  
+      
+
+</div>
+
+
+  <!-- Breakfast Section -->
+<div class="menu-section" data-category="breakfast">
+  <h2>Morning Delights</h2>
+  <!-- <div class="menu-items"> -->
+
+    <!-- <div class="menu"> -->
+
+     
+
+    
+      <!-- Naan Roti & Paneer Sabji -->
+    
+      <!-- Naan Roti & Paneer Sabji -->
+      <div class="menu-item"
+      data-name="naan Roti & paneer sabji"
+      data-type="veg"
+      data-price="300"
+      data-rating="4.9"
+      data-stock="in"
+      data-time="35">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/naan-roti+paneer.jpeg" alt="Naan Roti & Paneer Sabji">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Naan Roti & Paneer Sabji</h2>
+       <h2> ₹300</h2>
+       <h3>
+         Serves 1-2 | Soft tandoori naan served with rich and creamy paneer sabji, seasoned with traditional spices.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.9 •</span>
+         <span> 35-40 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Poha -->
+ <div class="menu-item"
+      data-name="poha"
+      data-type="veg"
+      data-price="50"
+      data-rating="4.1"
+      data-stock="in"
+      data-time="20">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/poha.jpg" alt="Poha">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Poha</h2>
+       <h2> ₹50</h2>
+       <h3>
+         Serves 1-2 | Light and fluffy flattened rice tempered with mustard seeds, green chilies, and fresh coriander.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.1 •</span>
+         <span> 20-25 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Moong Dal Chilla -->
+ <div class="menu-item"
+     data-name="Moong Dal chilla"
+      data-type="veg"
+      data-price="110"
+      data-rating="4.2"
+      data-stock="in"
+      data-time="30">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/moong-dal-chilla.webp" alt="Moong Dal Chilla">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Moong Dal Chilla</h2>
+       <h2> ₹110</h2>
+       <h3>
+         Serves 1-2 | Healthy, protein-rich moong dal pancakes served with tangy chutney.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.2 •</span>
+         <span> 30-35 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ <!-- Masala Dosa -->
+ <div class="menu-item"
+     data-name="Masala Dosa"
+      data-type="veg"
+      data-price="200"
+      data-rating="4.6"
+      data-stock="in"
+      data-time="40">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/masala-dosa.avif" alt="Masala Dosa">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Masala Dosa</h2>
+       <h2>₹200</h2>
+       <h3>
+         Serves 1 | Crispy dosa filled with a spiced potato mixture, served with coconut chutney and sambar.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+         <span>40-45 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Idli -->
+ <div class="menu-item"
+     data-name="idli"
+      data-type="veg"
+      data-price="120"
+      data-rating="4.6"
+      data-stock="in"
+      data-time="40">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/idli.png" alt="Idli">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Idli</h2>
+       <h2>₹120</h2>
+       <h3>
+         Serves 1 | Soft, fluffy South Indian steamed rice cakes served with coconut chutney and sambar.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+         <span>40-50 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Indian Roti -->
+ <div class="menu-item"
+      data-name="indian Roti"
+      data-type="veg"
+      data-price="40"
+      data-rating="4.6"
+      data-stock="in"
+      data-time="20">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/indian-roti.avif" alt="Indian Roti">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Indian Roti</h2>
+       <h2>₹40</h2>
+       <h3>
+         Serves 1 | Soft, whole wheat flatbread, a staple of Indian meals.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+         <span>20-45 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Misal Pav -->
+ <div class="menu-item"
+      data-name="misal pav"
+      data-type="veg"
+      data-price="150"
+      data-rating="5.0"
+      data-stock="in"
+      data-time="40">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/misal-pav.jpg" alt="Misal Pav">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Misal Pav</h2>
+       <h2>₹150</h2>
+       <h3>
+         Serves 1 | Spicy sprouted lentil curry topped with crunchy farsan, served with soft pav and lemon wedges.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 5.0 •</span>
+         <span>40-45 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+  
+ <div class="menu-item"
+      data-name="Aloo paratha"
+      data-type="veg"
+      data-price="180"
+      data-rating="4.6"
+      data-stock="in"
+      data-time="40">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/allo-paratha.jpg" alt="Aloo Paratha">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Aloo Paratha</h2>
+       <h2>₹180</h2>
+       <h3>Flaky, whole wheat flatbread stuffed with spiced mashed potatoes, cooked to golden perfection. Served with butter, curd, and pickle.</h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+         <span>40-45 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <div class="menu-item"
+ data-name="uttpam"
+      data-type="veg"
+      data-price="160"
+      data-rating="4.7"
+      data-stock="in"
+      data-time="20">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/uttpam.jpg" alt="Uttapam">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Uttapam</h2>
+       <h2>₹160</h2>
+       <h3>Soft and fluffy South Indian pancake made with fermented rice-lentil batter, topped with onions, tomatoes, and spices. Served with coconut chutney and sambar.</h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.7 •</span>
+         <span>20-45 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <div class="menu-item"
+      data-name="besan chilla"
+      data-type="veg"
+      data-price="130"
+      data-rating="4.5"
+      data-stock="in"
+      data-time="35">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/besan-chilla.avif" alt="Besan Chilla">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Besan Chilla</h2>
+       <h2>₹130</h2>
+       <h3>Crispy and golden gram flour pancake, packed with spices and fresh herbs. Served with tangy mint chutney.</h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.5 •</span>
+         <span>35-45 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <div class="menu-item"
+      data-name="tandoori mushroom"
+      data-type="veg"
+      data-price="239"
+      data-rating="4.6"
+      data-stock="in"
+      data-time="40">
+   <div class="img-container">
+     <img src="../../../assets/images/starter/tandoori-mushroom.avif" alt="Tandoori Mushroom">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Tandoori Mushroom</h2>
+       <h2>₹239</h2>
+       <h3>Juicy mushrooms marinated in a flavorful blend of Indian spices, grilled to smoky perfection.</h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+         <span>40-45 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <div class="menu-item"
+     data-name="Ragi Dosa"
+      data-type="veg"
+      data-price="170"
+      data-rating="4.7"
+      data-stock="in"
+      data-time="40">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/ragi-dosa.jpeg" alt="Ragi Dosa">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Ragi Dosa</h2>
+       <h2>₹170</h2>
+       <h3>Nutritious and crispy dosa made from wholesome ragi flour, packed with fiber and served with coconut chutney.</h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.7 •</span>
+         <span>40-45 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ 
+ <!-- Methi Thepla Card -->
+ <div class="menu-item"
+      data-name="Methi Thepla"
+      data-type="veg"
+      data-price="140"
+      data-rating="4.7"
+      data-stock="in"
+      data-time="40">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/methi-thepla.jpg" alt="Methi Thepla">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Methi Thepla</h2>
+       <h2>₹140</h2>
+       <h3>
+         Serves 1-2 | Traditional Gujarati flatbread infused with fresh fenugreek leaves and mild spices.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.7 •</span>
+         <span>40-55 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Cheese Burst Paratha Card -->
+ <div class="menu-item"
+      data-name="Cheese Burst Paratha"
+      data-type="veg"
+      data-price="190"
+      data-rating="4.6"
+      data-stock="in"
+      data-time="30">
+ <!-- </div> -->
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/cheese-burst-paratha.avif" alt="Cheese Burst Paratha">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Cheese Burst Paratha</h2>
+       <h2>₹190</h2>
+       <h3>
+         Serves 1-2 | Crispy on the outside, gooey on the inside! A stuffed paratha filled with molten cheese.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+         <span>30-45 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Paneer Bhurji Card -->
+ <div class="menu-item"
+      data-name="Paneer Bhurji"
+      data-type="veg"
+      data-price="200"
+      data-rating="4.8"
+      data-stock="in"
+      data-time="40">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/panner-bhurji.jpeg" alt="Paneer Bhurji">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Paneer Bhurji</h2>
+       <h2>₹200</h2>
+       <h3>
+         Serves 1-2 | Scrambled paneer cooked with a blend of spices, making it a delicious and protein-rich dish.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.8 •</span>
+         <span>40-50 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Lachha Paratha Card -->
+ <div class="menu-item"
+      data-name="Lachha paratha"
+      data-type="veg"
+      data-price="49"
+      data-rating="4.2"
+      data-stock="in"
+      data-time="40">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/lacha-paratha.jpeg" alt="Lachha Paratha">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Lachha Paratha</h2>
+       <h2>₹49</h2>
+       <h3>
+         Serves 1-2 | A crispy, flaky, and multi-layered Indian flatbread, best served with curries and gravies.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.2 •</span>
+         <span>40-45 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- Tandoori Roti Card -->
+ <div class="menu-item"
+      data-name="Tandoori Roti"
+      data-type="veg"
+      data-price="50"
+      data-rating="4.2"
+      data-stock="in"
+      data-time="45">
+   <div class="img-container">
+     <img src="../../../assets/images/breakfast/tandoori-roti.avif" alt="Tandoori Roti">
+   </div>
+   <div class="description-button">
+     <div>
+       <h2>Tandoori Roti</h2>
+       <h2>₹50</h2>
+       <h3>
+         Serves 1 | A traditional Indian bread cooked in a tandoor, soft yet crispy, perfect for any meal.
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.2 •</span>
+         <span>45-55 mins</span>
+       </h5>
+     </div>
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-details">Order Now</a>
+     </div>
+   </div>
+ </div>
+    
+    </div>
+    
+    
+  <!-- </div> -->
+<!-- </div>     -->
+
+</section>
+
+<!-- main -->
+
+
+
+<section class="menu-pagination">
+  <nav>
+   
+    <a href="../starter/starter.html"  target="_blank">   <i class="fa-solid fa-arrow-left"></i>  prev Page </a>
+    <a href="../lunch/lunch.html"  target="_blank">next Page  <i class="fa-solid fa-arrow-right"></i></a>
+   
+  </nav>
+</section>
+
+
+<!-- footer -->
+<div id="footer-placeholder"></div>
+<!-- footer -->
+  <script>
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+    
+          // ✅ Callback function execute karo agar diya hai
+          if (callback) callback();
+        })
+        .catch(error => console.error(`Error loading ${file}:`, error));
+    }
+    
+    // ✅ Load Header & Footer with Correct Paths
+    loadComponent("header-placeholder", "../../../components/header/header.html", function() {
+      loadHeaderScript();
+    });
+    
+    loadComponent("footer-placeholder", "../../../components/footer/footer.html", function() {
+      loadFooterScript();
+    });
+    
+    // ✅ Correct Header Script Path
+    function loadHeaderScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/header/header.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+    // ✅ Correct Footer Script Path
+    function loadFooterScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/footer/footer.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+  </script>
+<script src="./breakfast.js"></script>
+</body>
+</html>

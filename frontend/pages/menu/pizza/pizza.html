@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>pizza</title>
+    <script src="https://kit.fontawesome.com/ba2faaa4dd.js"></script>
+    <link rel="stylesheet" href="pizza.css" />
+    <link rel="stylesheet" href="../../../components/header/header.css">
+<link rel="stylesheet" href="../../../components/footer/footer.css">
+  </head>
+  <body>
+
+    <div id="header-placeholder"></div>
+    <section>
+      <h1>Pizza Paradise</h1>
+
+
+          <!-- search-bar
+          <div class="search-bar">
+            <i class="fas fa-search"  ></i>
+        
+            <input type="text" placeholder="search foods..."  id="search-text">
+          </div>
+      
+          
+        <!-- filters -->
+      
+        <!-- <div class="filters">
+          <div class="filter-group">
+          </div> -->
+      
+          <!-- <div class="filter-group">
+              <h3>Food Type</h3>
+              <label> <input type="checkbox" name="food-type" value="all"> All</label>
+              <label> <input type="checkbox" name="food-type" value="veg"> Veg</label>
+              <label> <input type="checkbox" name="food-type" value="non-veg"> Non-Veg</label>
+          </div> -->
+      
+         
+<!--       
+          <div class="filter-group">
+              <h3>Price Range</h3>
+              <select name="price">
+                  <option value="under-300">Under ₹300</option>
+                  <option value="above-300">Above ₹300</option>
+              </select>
+          </div>
+      
+          <div class="filter-group">
+              <h3>Rating</h3>
+              <select name="ratings">
+                  <option value="2-star">2★ & Above</option>
+                  <option value="4-star">4★ & Above</option>
+              </select>
+          </div>
+      
+          <div class="filter-group">
+              <h3>Stock Availability</h3>
+              <select name="availability">
+                  <option value="sold-in">Sold-In</option>
+                  <option value="sold-out">Sold-Out</option>
+              </select>
+          </div>
+      
+      
+          <div class="filter-group">
+          <h3>delivery Time</h3>
+          <select id="deliveryTimeFilter">
+              <option value="all">All</option>
+              <option value="fast">Fast Delivery (Under 30 mins)</option>
+              <option value="normal">Standard (30-60 mins)</option>
+              <option value="slow">Scheduled (1+ hour)</option>
+          </select>
+          </div>
+      
+       
+      
+      </div>
+        -->
+
+
+
+      <div class="pizza-container">
+
+
+  <!-- Card 1 -->
+  <div class="pizza-card"
+  data-name="Margherita Pizza"
+data-type="veg"
+data-price="99"
+data-rating="4.3"
+data-stock="in"
+data-time="20">
+    <div class="img-container">
+      <img src="../../../assets/images/pizza/margherita-pizza.jpg" alt="margherita-pizza" />
+    </div>
+
+    <div class="description-button">
+      <div>
+        <h2>Margherita Pizza</h2>
+        <h2>₹99</h2>
+        <h3>
+          Serves 1-3 | Available in Small (₹80), Medium (₹150), Large
+          (₹250) | Our classic Margherita Pizza is topped with rich tomato
+          sauce, fresh mozzarella cheese, and aromatic basil, baked on a
+          hand-tossed crispy crust.
+          <br />
+          <strong>Add extra toppings:</strong> Olives, Jalapenos,
+          Mushrooms, Extra Cheese (+₹30 each).
+        </h3>
+        <h5>
+          <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+          <span><i class="fa-solid fa-star" id="star"></i> 4.3 •</span>
+          <span> 20-35 mins</span>
+        </h5>
+      </div>
+
+      <div class="button-container">
+        <a href="">Add to Cart</a>
+        <a href="" class="more-deatils">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="pizza-card"
+  data-name="Marinara pizza"
+data-type="veg"
+data-price="99"
+data-rating="4.2"
+data-stock="in"
+data-time="25">
+    <div class="img-container">
+      <img src="../../../assets/images/pizza/Marinara.jpeg" alt="Marinara" />
+    </div>
+
+    <div class="description-button">
+      <div>
+        <h2>Marinara Pizza</h2>
+        <h2>₹99</h2>
+        <h3>
+          Serves 1-3 | Available in Small (₹90), Medium (₹160), Large
+          (₹270)** Our Marinara Pizza is a simple yet flavorful delight,
+          topped with a zesty tomato sauce, fresh garlic, and a sprinkle
+          of oregano, all resting on a perfectly crispy, hand-tossed
+          crust.
+          <br />
+          <strong>Add extra toppings:</strong> Olives, Jalapenos,
+          Mushrooms, Extra Cheese (+₹30 each).
+        </h3>
+        <h5>
+          <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+          <span><i class="fa-solid fa-star" id="star"></i> 4.2 •</span>
+          <span> 25-35 mins</span>
+        </h5>
+      </div>
+
+      <div class="button-container">
+        <a href="">Add to Cart</a>
+        <a href="" class="more-deatils">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="pizza-card"
+  data-name="new york style Pizza"
+data-type="veg"
+data-price="119"
+data-rating="4.4"
+data-stock="in"
+data-time="30">
+    <div class="img-container">
+      <img
+        src="../../../assets/images/pizza/new-york-style-pizza.jpeg"
+        alt="new-york-style-pizza"
+      />
+    </div>
+
+    <div class="description-button">
+      <div>
+        <h2>new-york-style-Pizza</h2>
+        <h2>₹119</h2>
+        <h3>
+          Serves 1-3 | Available in Small (₹100), Medium (₹180), Large
+          (₹300)** Our New York-style pizza features a large, thin, and
+          foldable crust, topped with rich tomato sauce, a blend of gooey
+          mozzarella and provolone cheese, and a perfect sprinkle of
+          Italian seasoning.
+          <br />
+          <strong>Add extra toppings:</strong> Olives, Jalapenos,
+          Mushrooms, Extra Cheese (+₹30 each).
+        </h3>
+        <h5>
+          <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+          <span><i class="fa-solid fa-star" id="star"></i> 4.4 •</span>
+          <span> 30-35 mins</span>
+        </h5>
+      </div>
+
+      <div class="button-container">
+        <a href="">Add to Cart</a>
+        <a href="" class="more-deatils">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="pizza-card"
+  data-name="sicilian pizza"
+data-type="veg"
+data-price="139"
+data-rating="5.0"
+data-stock="in"
+data-time="40">
+    <div class="img-container">
+      <img src="../../../assets/images/pizza/sicilian-pizza.jpeg" alt="sicilian-pizza" />
+    </div>
+
+    <div class="description-button">
+      <div>
+        <h2>sicilian-pizza</h2>
+        <h2>₹139</h2>
+        <h3>
+          Sure! Here's a description for a Sicilian-style pizza:
+          **Sicilian-Style Pizza** Serves 1-3 | Available in Small (₹120),
+          Medium (₹220), Large (₹350)** Our Sicilian-style pizza features
+          a thick, airy crust that's golden and crispy on the outside with
+          a soft, pillowy texture inside.
+
+          <br />
+          <strong>Add extra toppings:</strong> Olives, Jalapenos,
+          Mushrooms, Extra Cheese (+₹30 each).
+        </h3>
+        <h5>
+          <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+          <span><i class="fa-solid fa-star" id="star"></i> 5.0 •</span>
+          <span> 40-45 mins</span>
+        </h5>
+      </div>
+
+      <div class="button-container">
+        <a href="">Add to Cart</a>
+        <a href="" class="more-deatils">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="pizza-card"
+  data-name="chicago deep dish pizza"
+data-type="veg"
+data-price="149"
+data-rating="4.5"
+data-stock="in"
+data-time="35">
+    <div class="img-container">
+      <img
+        src="../../../assets/images/pizza/chicago-deep-dish-pizza.jpg"
+        alt="chicago-deep-dish-pizza"
+      />
+    </div>
+
+    <div class="description-button">
+      <div>
+        <h2>chicago-deep-dish-pizza</h2>
+        <h2>₹149</h2>
+        <h3>
+          Serves 1-3 | Available in Small (₹100), Medium (₹180), Large
+          (₹300) Experience the iconic **New York-style pizza** with a
+          thin, crispy, yet chewy crust that's perfect for folding. This
+          delicious pizza is topped with a rich and tangy tomato sauce,
+          blended mozzarella, and provolone cheese, giving it that gooey,
+          melt-in-your-mouth perfection. 
+          <br />
+          <strong>Add extra toppings:</strong> Olives, Jalapenos,
+          Mushrooms, Extra Cheese (+₹30 each).
+        </h3>
+        <h5>
+          <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+          <span><i class="fa-solid fa-star" id="star"></i> 4.5 •</span>
+          <span> 35-40 mins</span>
+        </h5>
+      </div>
+
+      <div class="button-container">
+        <a href="">Add to Cart</a>
+        <a href="" class="more-deatils">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="pizza-card"
+  data-name="Russian pizza"
+data-type="veg"
+data-price="169"
+data-rating="4.5"
+data-stock="in"
+data-time="30">
+    <div class="img-container">
+      <img src="../../../assets/images/pizza/russian-pizza.jpg" alt="russian-pizza" />
+    </div>
+
+    <div class="description-button">
+      <div>
+        <h2>Rssian-pizza</h2>
+        <h2>₹169</h2>
+        <h3>
+          Serves 1-3 | Available in Small (₹100), Medium (₹180), Large
+          (₹300) Savor the unique fusion of flavors with our Russian-style
+          pizza, a delicious twist on traditional pizza. This pizza
+          features a soft, slightly thicker crust with a perfect balance
+          of crispiness and tenderness, offering a comforting base for its
+          flavorful toppings. 
+          <br />
+          <strong>Add extra toppings:</strong> Olives, Jalapenos,
+          Mushrooms, Extra Cheese (+₹30 each).
+        </h3>
+        <h5>
+          <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+          <span><i class="fa-solid fa-star" id="star"></i> 4.5 •</span>
+          <span> 30-40 mins</span>
+        </h5>
+      </div>
+
+      <div class="button-container">
+        <a href="">Add to Cart</a>
+        <a href="" class="more-deatils">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="pizza-card"
+  data-name="peri peri pizza"
+data-type="veg"
+data-price="179"
+data-rating="5.0"
+data-stock="in"
+data-time="20">
+    <div class="img-container">
+      <img src="../../../assets/images/pizza/peri-peri.jpeg" alt="peri-peri-pizza" />
+    </div>
+
+    <div class="description-button">
+      <div>
+        <h2>peri-peri-pizza</h2>
+        <h2>₹179</h2>
+        <h3>
+          Serves 1-3 | Available in Small (₹100), Medium (₹180), Large
+          (₹300) Turn up the heat with our Peri-Peri Pizza, a fiery and
+          flavorful creation that’s perfect for spice lovers! The pizza
+          features a thin, crispy crust that’s the perfect base for a
+          bold, spicy Peri-Peri sauce. 
+          <br />
+          <strong>Add extra toppings:</strong> Olives, Jalapenos,
+          Mushrooms, Extra Cheese (+₹30 each).
+        </h3>
+        <h5>
+          <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+          <span><i class="fa-solid fa-star" id="star"></i> 5.0 •</span>
+          <span> 20-30 mins</span>
+        </h5>
+      </div>
+
+      <div class="button-container">
+        <a href="">Add to Cart</a>
+        <a href="" class="more-deatils">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 8 -->
+  <div class="pizza-card"
+  data-name="Indian style pizza"
+data-type="veg"
+data-price="199"
+data-rating="5.0"
+data-stock="in"
+data-time="20">
+    <div class="img-container">
+      <img
+        src="../../../assets/images/pizza/indian-style-pizza.webp"
+        alt="indian-style-pizza"
+      />
+    </div>
+
+    <div class="description-button">
+      <div>
+        <h2>Indian-style-pizza</h2>
+        <h2>₹199</h2>
+        <h3>
+          Serves 1-3 | Available in Small (₹100), Medium (₹180), Large
+          (₹300) Embark on a bold, flavorful journey with our Indian-Style
+          Pizza, a perfect fusion of traditional pizza and the vibrant
+          flavors of India! This pizza features a soft yet slightly crispy
+          crust, offering the ideal base for a unique blend of toppings.
+         
+
+          <br />
+          <strong>Add extra toppings:</strong> Olives, Jalapenos,
+          Mushrooms, Extra Cheese (+₹30 each).
+        </h3>
+        <h5>
+          <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+          <span><i class="fa-solid fa-star" id="star"></i> 5.0 •</span>
+          <span> 20-35 mins</span>
+        </h5>
+      </div>
+
+      <div class="button-container">
+        <a href="">Add to Cart</a>
+        <a href="" class="more-deatils">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <section class="menu-pagination">
+      <nav>
+       
+       
+        <a href="../burger/burgur.html"  target="_blank">   <i class="fa-solid fa-arrow-left"></i>  prev Page </a>
+        <a href="../cakes/cake-&-pastry.html"  target="_blank">   <i class="fa-solid fa-arrow-right"></i>  next Page </a>
+      </nav>
+    </section>
+    
+    <!-- footer -->
+<div id="footer-placeholder"></div>
+<!-- footer -->
+  <script>
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+    
+          // ✅ Callback function execute karo agar diya hai
+          if (callback) callback();
+        })
+        .catch(error => console.error(`Error loading ${file}:`, error));
+    }
+    
+    // ✅ Load Header & Footer with Correct Paths
+    loadComponent("header-placeholder", "../../../components/header/header.html", function() {
+      loadHeaderScript();
+    });
+    
+    loadComponent("footer-placeholder", "../../../components/footer/footer.html", function() {
+      loadFooterScript();
+    });
+    
+    // ✅ Correct Header Script Path
+    function loadHeaderScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/header/header.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+    // ✅ Correct Footer Script Path
+    function loadFooterScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/footer/footer.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+  </script>
+
+    <!-- <script src="pizza.js"></script> -->
+  </body>
+</html>

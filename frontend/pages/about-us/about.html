@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Food Website</title>
+    <link rel="stylesheet" href="about.css">
+
+        <!-- fontawesome script tag -->
+        <script src="https://kit.fontawesome.com/ba2faaa4dd.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../../components/header/header.css">
+        <link rel="stylesheet" href="../../components/footer/footer.css">
+</head>
+<body>
+
+<!-- footer -->
+<div id="header-placeholder"></div>
+
+   <!-- About Us Section -->
+<section class="about-section">
+
+  <video autoplay loop muted class="bg-video">
+    <source src="../../assets/images/about-us/food.mp4" type="video/mp4">
+    </video>
+  <div class="about-content">  
+      <h2>Welcome to <span>food hub</span></h2>
+      <p>Bringing you the best homemade recipes, cooking tips, and restaurant reviews.</p>
+      <a href="../menu/menu.html" class="btn">Explore Recipes</a>
+  </div>
+</section>
+
+<!-- Team Section -->
+<!-- Team Section -->
+<section class="team-section">
+  <h2 class="team-heading">Meet Our Chefs</h2>
+  <p class="team-subheading">Passionate food lovers behind our recipes</p>
+
+  <div class="team-container">
+      <div class="team-member">
+          <img src="../../assets/images/about-us/chef.avif" alt="Chef Ananya">
+          <h3>Chef Ananya</h3>
+          <p class="chef-desc">Expert in Indian & Fusion Cuisine</p>
+          <p class="experience">10+ years of experience</p>
+          <p class="special-dish">Signature Dish: Hyderabadi Biryani</p>
+          <div class="social-links">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      </div>
+
+      <div class="team-member">
+          <img src="../../assets/images/about-us/chef-3.jpg" alt="Chef Rahul">
+          <h3>Chef Rahul</h3>
+          <p class="chef-desc">Specialist in Italian & Pastries</p>
+          <p class="experience">8+ years of experience</p>
+          <p class="special-dish">Signature Dish: Tiramisu</p>
+          <div class="social-links">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      </div>
+
+      <div class="team-member">
+          <img src="../../assets/images/about-us/chef2.jpg" alt="Chef Meera">
+          <h3>Chef Meera</h3>
+          <p class="chef-desc">Master of Healthy & Vegan Food</p>
+          <p class="experience">12+ years of experience</p>
+          <p class="special-dish">Signature Dish: Quinoa Salad</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- our journey  -->
+<section class="our-journey">
+  <div class="journey-container">
+    <h2>Our Journey</h2>
+    <p>From a small food blog to a global recipe platform our story of passion and flavors.</p>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>2020 - The Beginning</h3>
+          <p>Started as a small blog, sharing homemade recipes with friends & family.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>2021 - Growing Community</h3>
+          <p>Our recipes gained love from thousands, leading to a passionate food community.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>2022 - Video Tutorials</h3>
+          <p>Launched step-by-step video tutorials, making cooking easier for all.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>2023 - A Global Platform</h3>
+          <p>Now inspiring millions worldwide with expert cooking tips & delicious recipes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-section">
+  <h2>Ready to Explore Delicious Recipes?</h2>
+  <p>Discover mouth-watering dishes and cook like a pro with our exclusive recipes.</p>
+  <a href="../../menu/menu.html" class="btn">Explore Recipes</a>
+</section>
+
+
+
+
+<!-- footer -->
+<div id="footer-placeholder"></div>
+<!-- footer -->
+  <script>
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+    
+          // ✅ Callback function execute karo agar diya hai
+          if (callback) callback();
+        })
+        .catch(error => console.error(`Error loading ${file}:`, error));
+    }
+    
+    // ✅ Load Header & Footer with Correct Paths
+    loadComponent("header-placeholder", "../../components/header/header.html", function() {
+      loadHeaderScript();
+    });
+    
+    loadComponent("footer-placeholder", "../../components/footer/footer.html", function() {
+      loadFooterScript();
+    });
+    
+    // ✅ Correct Header Script Path
+    function loadHeaderScript() {
+      const script = document.createElement("script");
+      script.src = "../../components/header/header.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+    // ✅ Correct Footer Script Path
+    function loadFooterScript() {
+      const script = document.createElement("script");
+      script.src = "../../components/footer/footer.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+  </script>
+
+
+</body>
+</html>

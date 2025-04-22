@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="./login.css">
+      <!-- fontawesome script tag -->
+      <script src="https://kit.fontawesome.com/ba2faaa4dd.js" crossorigin="anonymous"></script>
+
+
+<!-- <link rel="stylesheet" href="../../components/header/header.css"> -->
+
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <section class="container">
+    <!-- <div class="image"><img src="/project-infinity/assets/images/login-sign-up/login.avif" alt=""></div> -->
+    <div class="login-box">
+      <h2>welcome back</h2>
+      <!-- <p id="login-desc">Order your favorite food in seconds!</p> -->
+      <form id="loginForm">
+    
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <span class="error-message"></span> <!-- Error yahan show hoga -->
+    
+        <i class="fa-solid fa-eye-slash"></i>
+        <i class="fa-solid fa-eye"></i>
+     
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <span class="error-message"></span> <!-- Error yahan show hoga -->
+        
+    
+        <button type="submit" class="login-btn">Login</button>
+        <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+        <p class="signup-link">Don't have an account? <a href="/frontend/pages/sign-up/signup.html">Sign Up</a></p>
+    
+        <!-- <p class="login-with">Login with</p>
+        <div class="social-links">
+            <a href=""><i class="fa-brands fa-google"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div> -->
+    
+    </form>
+    
+    </div>
+</section>
+
+
+<script>
+  function loadComponent(id, file, callback) {
+    fetch(file)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById(id).innerHTML = data;
+  
+        // ✅ Callback function execute karo agar diya hai
+        if (callback) callback();
+      })
+      .catch(error => console.error(`Error loading ${file}:`, error));
+  }
+  
+  // ✅ Load Header & Footer with Correct Paths
+  loadComponent("header-placeholder", "../../components/header/header.html", function() {
+    loadHeaderScript();
+  });
+  
+ 
+  
+  // ✅ Correct Header Script Path
+  function loadHeaderScript() {
+    const script = document.createElement("script");
+    script.src = "../../components/header/header.js"; // ✅ Correct path
+    script.defer = true;
+    document.body.appendChild(script);
+  }
+  
+
+  
+</script>
+<script src="./login.js" defer></script>
+
+
+</body>
+</html>

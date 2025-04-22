@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunch</title>
+  <link rel="stylesheet" href="../dishes.css">
+
+  
+ <!-- fontawesome script tag -->
+ <script src="https://kit.fontawesome.com/ba2faaa4dd.js" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="../../../components/header/header.css">
+<link rel="stylesheet" href="../../../components/footer/footer.css">
+
+</head>
+<body>
+    <!-- header -->
+<div id="header-placeholder"></div>
+<!-- header -->
+
+
+<!-- main -->
+<section>
+
+
+
+  <!-- search-bar -->
+  <div class="search-bar">
+   <i class="fas fa-search"  id="filter-serach"></i>
+
+   <input type="text" placeholder="search foods..."  id="search-text" >
+ </div>
+
+
+ 
+ <!-- filters -->
+ <div class="filters">
+   <div class="filter-group">
+   <h1 class="h1-font">Filter By</h1>
+   </div>
+
+   <div class="filter-group">
+       <h3>Food Type</h3>
+       <label> <input type="checkbox" name="food-type" value="all"> All</label>
+       <label> <input type="checkbox" name="food-type" value="veg"> Veg</label>
+       <label> <input type="checkbox" name="food-type" value="non-veg"> Non-Veg</label>
+   </div>
+
+  
+
+   <div class="filter-group">
+       <h3>Price Range</h3>
+       <select name="price">
+           <option value="under-300">Under ₹300</option>
+           <option value="above-300">Above ₹300</option>
+       </select>
+   </div>
+
+   <div class="filter-group">
+       <h3>Rating</h3>
+       <select name="ratings">
+           <option value="2-star">2★ & Above</option>
+           <option value="4-star">4★ & Above</option>
+       </select>
+   </div>
+
+   <div class="filter-group">
+       <h3>Stock Availability</h3>
+       <select name="availability">
+           <option value="sold-in">Sold-In</option>
+           <option value="sold-out">Sold-Out</option>
+       </select>
+   </div>
+
+
+   <div class="filter-group">
+   <h3>delivery Time</h3>
+   <select id="deliveryTimeFilter">
+       <option value="all">All</option>
+       <option value="fast">Fast Delivery (Under 30 mins)</option>
+       <option value="normal">Standard (30-60 mins)</option>
+       <option value="slow">Scheduled (1+ hour)</option>
+   </select>
+   </div>
+
+     
+
+</div>
+
+
+ 
+<!-- Lunch Section -->
+<div class="menu-section" data-category="lunch">
+ <h2>Midday Meals </h2>
+
+ <div class="menu-item"
+   data-name="veg-thaali"
+    data-type="veg"
+    data-price="149"
+    data-rating="4.6"
+    data-stock="in"
+    data-time="40"
+    data-discount="20">
+   <div class="img-container">
+     <img src="../../../assets/images/lunch/veg-thaali.avif" alt="veg-thaali">
+   </div>
+ 
+   <div class="description-button">
+     <div>
+       <h2>Veg Thaali</h2>
+       <h2> ₹149</h2>
+       <h3>
+         Serves 1 | A wholesome and delicious meal with a variety of vegetarian dishes. 
+         Perfectly balanced with flavors and nutrition for a fulfilling experience.
+         <br> <strong>Add extra items:</strong> Paneer, Dal Tadka, Extra Roti (+₹30 each).
+       </h3>
+       <h5>
+         <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+         <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+         <span> 40-45 mins</span>
+       </h5>
+     </div>
+ 
+     <div class="button-container">
+       <a href="">Add to Cart</a>
+       <a href="" class="more-deatils">Order Now</a>
+     </div>
+   </div>
+ </div>
+   
+   
+       
+  <div class="menu-item"
+   data-name="butter-chicken-nan"
+    data-type="Non-veg"
+    data-price="119"
+    data-rating="4.2"
+    data-stock="in"
+    data-time="35"
+    data-discount="20">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/butter-chicken-nan.jpg" alt="butter-chicken-naan">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Butter Chicken with Naan</h2>
+     <h2> ₹119</h2>
+     <h3>
+       Serves 1 | Creamy, flavorful butter chicken served with soft butter naan. 
+       A perfect combination of rich gravy and fluffy naan.
+       <br> <strong>Add extra items:</strong> Extra Naan, Salad, Butter (+₹30 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 4.2 •</span>
+       <span> 35-45 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+
+
+<div class="menu-item"
+   data-name="tadka-chawal"
+    data-type="Non-Veg"
+    data-price="180"
+    data-rating="4.1"
+    data-stock="in"
+    data-time="40"
+    data-discount="10">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/tadka-chawal.jpg" alt="tadka-chawal">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Tadka Chawal</h2>
+     <h2> ₹180</h2>
+     <h3>
+       Serves 1-2 | Enjoy the rich and smoky flavors of our Tadka Chawal, 
+       prepared with aromatic spices and tempered to perfection.
+       <br> <strong>Add-ons:</strong> Curd, Papad, Extra Tadka (+₹30 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 4.1 •</span>
+       <span> 40-45 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+<div class="menu-item"
+    data-name="palak-panner"
+    data-type="Veg"
+    data-price="250"
+    data-rating="3.9"
+    data-stock="in"
+    data-time="40"
+    data-discount="15">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/palak-panner.avif" alt="palak-paneer">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Palak Paneer</h2>
+     <h2> ₹250</h2>
+     <h3>
+       Serves 1-2 | A classic dish with soft paneer cubes cooked in a rich, 
+       creamy spinach gravy. A perfect balance of taste and nutrition.
+       <br> <strong>Add-ons:</strong> Butter Roti, Jeera Rice, Extra Paneer (+₹30 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 3.9 •</span>
+       <span> 40-50 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+   
+
+<div class="menu-item"
+    data-name="palak-panner"
+    data-type="Veg"
+    data-price="250"
+    data-rating="3.9"
+    data-stock="in"
+    data-time="40"
+    data-discount="15">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/palak-panner.avif" alt="palak-paneer">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Palak Paneer</h2>
+     <h2> ₹250</h2>
+     <h3>
+       Serves 1-2 | Soft paneer cubes cooked in a rich, creamy spinach gravy. 
+       A healthy and delicious choice for lunch or dinner.  
+       <br> <strong>Add-ons:</strong> Butter Roti, Jeera Rice, Extra Paneer (+₹30 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 3.9 •</span>
+       <span> 40-50 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+<div class="menu-item"
+    data-name="lunch/rice-"
+    data-type="Veg"
+    data-price="120"
+    data-rating="4.6"
+    data-stock="in"
+    data-time="40"
+    data-discount="20">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/rice.jpeg" alt="steamed-rice">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Steamed Rice</h2>
+     <h2> ₹120</h2>
+     <h3>
+       Serves 1-2 | Soft, fluffy, and perfectly cooked steamed rice.  
+       Pairs well with curries, dals, and stir-fried vegetables.  
+       <br> <strong>Add-ons:</strong> Dal Tadka, Ghee, Papad (+₹30 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+       <span> 40-45 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+<div class="menu-item"
+    data-name="mutton-curry"
+    data-type="Non-Veg"
+    data-price="400"
+    data-rating="4.4"
+    data-stock="in"
+    data-time="30"
+    data-discount="25">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/mutton-curry.jpg" alt="mutton-curry">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Mutton Curry</h2>
+     <h2> ₹400</h2>
+     <h3>
+       Serves 1-2 | Tender mutton pieces slow-cooked in a rich and spicy gravy.  
+       A must-try dish for non-veg lovers.  
+       <br> <strong>Add-ons:</strong> Steamed Rice, Butter Naan, Raita (+₹50 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 4.4 •</span>
+       <span> 30-35 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+<div class="menu-item"
+    data-name="lunch/pulao"
+    data-type="Veg"
+    data-price="180"
+    data-rating="4.6"
+    data-stock="in"
+    data-time="20"
+    data-discount="15">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/pulao.jpg" alt="pulao">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Pulao</h2>
+     <h2> ₹180</h2>
+     <h3>
+       Serves 1-2 | Aromatic basmati rice cooked with flavorful spices and fresh vegetables.  
+       A light yet delicious meal perfect for lunch or dinner.  
+       <br> <strong>Add-ons:</strong> Raita, Salad, Papad (+₹30 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+       <span> 20-45 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+<div class="menu-item"
+    data-name="curry-chawal"
+    data-type="Veg"
+    data-price="220"
+    data-rating="4.0"
+    data-stock="in"
+    data-time="30"
+    data-discount="20">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/curry-chawal.avif" alt="kadhi-chawal">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Kadhi Chawal</h2>
+     <h2> ₹220</h2>
+     <h3>
+       Serves 1-2 | A comforting meal of tangy yogurt-based kadhi paired with steamed rice.  
+       Perfect for a hearty, home-style experience.  
+       <br> <strong>Add-ons:</strong> Fryums, Extra Kadhi, Ghee (+₹30 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 4.0 •</span>
+       <span> 30-35 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+<div class="menu-item"
+    data-name="hyderabadi-biryani"
+    data-type="Non-Veg"
+    data-price="350"
+    data-rating="4.9"
+    data-stock="in"
+    data-time="40"
+    data-discount="20">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/hyderabadi-biryani.jpeg" alt="hyderabadi-biryani">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Hyderabadi Biryani</h2>
+     <h2> ₹350</h2>
+     <h3>
+       Serves 1-2 | Experience the rich, authentic taste of Hyderabadi Biryani,  
+       cooked with fragrant basmati rice, aromatic spices, and juicy, tender meat.  
+       <br> <strong>Add-ons:</strong> Raita, Mirchi Ka Salan, Extra Biryani Rice (+₹50 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 4.8 •</span>
+       <span> 40-45 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+   
+<div class="menu-item"
+    data-name="rajma-chawal"
+    data-type="Veg"
+    data-price="280"
+    data-rating="4.0"
+    data-stock="in"
+    data-time="20"
+    data-discount="25">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/rajma-chawal.avif" alt="rajma-chawal">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Rajma Chawal</h2>
+     <h2> ₹280</h2>
+     <h3>
+       Serves 1-2 | A comforting North Indian dish made with red kidney beans simmered in a rich tomato-based gravy, served with steamed rice.  
+       <br> <strong>Add-ons:</strong> Extra Rajma, Onion Salad, Ghee (+₹30 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 4.0 •</span>
+       <span> 20-35 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+<div class="menu-item"
+    data-name="dal-tadka"
+    data-type="Veg"
+    data-price="250"
+    data-rating="3.6"
+    data-stock="in"
+    data-time="40"
+    data-discount="25">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/dal-tadka.avif" alt="dal-tadka">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Dal Tadka</h2>
+     <h2> ₹260</h2>
+     <h3>
+       Serves 1-2 | Classic yellow lentils cooked to perfection and tempered with aromatic spices, served with steamed rice or roti.  
+       <br> <strong>Add-ons:</strong> Extra Dal, Ghee, Green Chilli (+₹30 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 3.6 •</span>
+       <span> 40-45 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+
+<div class="menu-item"
+    data-name="jeera-rice"
+    data-type="Veg"
+    data-price="150"
+    data-rating="4.6"
+    data-stock="in"
+    data-time="40"
+    data-discount="20">
+ <div class="img-container">
+   <img src="../../../assets/images/lunch/jeera-rice.jpg" alt="jeera-rice">
+ </div>
+
+ <div class="description-button">
+   <div>
+     <h2>Jeera Rice</h2>
+     <h2> ₹150</h2>
+     <h3>
+       Serves 1-2 | Fragrant basmati rice tempered with cumin seeds,  
+       making it the perfect accompaniment to dals and curries.  
+       <br> <strong>Add-ons:</strong> Extra Rice, Butter, Fried Onions (+₹30 each).
+     </h3>
+     <h5>
+       <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+       <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+       <span> 40-45 mins</span>
+     </h5>
+   </div>
+
+   <div class="button-container">
+     <a href="">Add to Cart</a>
+     <a href="" class="more-deatils">Order Now</a>
+   </div>
+ </div>
+</div>
+   
+       
+ </div>
+<!-- </div> -->
+
+</section>
+
+<!-- main -->
+
+
+<section class="menu-pagination">
+  <nav>
+   
+    <a href="../breakfast/breakfast.html"  target="_blank">   <i class="fa-solid fa-arrow-left"></i>  prev Page </a>
+    <a href="../dinner/dinner.html"  target="_blank">next Page  <i class="fa-solid fa-arrow-right"></i></a>
+    
+    
+  </nav>
+</section>
+
+<!-- footer -->
+<div id="footer-placeholder"></div>
+<!-- footer -->
+  <script>
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+    
+          // ✅ Callback function execute karo agar diya hai
+          if (callback) callback();
+        })
+        .catch(error => console.error(`Error loading ${file}:`, error));
+    }
+    
+    // ✅ Load Header & Footer with Correct Paths
+    loadComponent("header-placeholder", "../../../components/header/header.html", function() {
+      loadHeaderScript();
+    });
+    
+    loadComponent("footer-placeholder", "../../../components/footer/footer.html", function() {
+      loadFooterScript();
+    });
+    
+    // ✅ Correct Header Script Path
+    function loadHeaderScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/header/header.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+    // ✅ Correct Footer Script Path
+    function loadFooterScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/footer/footer.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+  </script>
+<script src="./lunch.js"></script>
+</body>
+</html>

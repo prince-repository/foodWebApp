@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dinner</title>
+  <link rel="stylesheet" href="../dishes.css">
+  
+ <!-- fontawesome script tag -->
+ <script src="https://kit.fontawesome.com/ba2faaa4dd.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="../../../components/header/header.css">
+<link rel="stylesheet" href="../../../components/footer/footer.css">
+
+</head>
+<body>
+    <!-- header -->
+<div id="header-placeholder"></div>
+<!-- header -->
+
+
+<!-- main -->
+<section>
+
+    <!-- search-bar -->
+    <div class="search-bar">
+      <i class="fas fa-search" id="filter-serach"></i>
+  
+      <input type="text" placeholder="search foods..."  id="search-text" >
+    </div>
+
+    
+  <!-- filters -->
+  <div class="filters">
+    <div class="filter-group">
+    <h1 class="h1-font">Filter By</h1>
+    </div>
+
+    <div class="filter-group">
+        <h3>Food Type</h3>
+        <label> <input type="checkbox" name="food-type" value="all"> All</label>
+        <label> <input type="checkbox" name="food-type" value="veg"> Veg</label>
+        <label> <input type="checkbox" name="food-type" value="non-veg"> Non-Veg</label>
+    </div>
+
+   
+
+    <div class="filter-group">
+        <h3>Price Range</h3>
+        <select name="price">
+            <option value="under-300">Under ₹300</option>
+            <option value="above-300">Above ₹300</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <h3>Rating</h3>
+        <select name="ratings">
+            <option value="2-star">2★ & Above</option>
+            <option value="4-star">4★ & Above</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <h3>Stock Availability</h3>
+        <select name="availability">
+            <option value="sold-in">Sold-In</option>
+            <option value="sold-out">Sold-Out</option>
+        </select>
+    </div>
+
+
+    <div class="filter-group">
+    <h3>delivery Time</h3>
+    <select id="deliveryTimeFilter">
+        <option value="all">All</option>
+        <option value="fast">Fast Delivery (Under 30 mins)</option>
+        <option value="normal">Standard (30-60 mins)</option>
+        <option value="slow">Scheduled (1+ hour)</option>
+    </select>
+    </div>
+
+
+      
+
+</div>
+
+  
+  
+<!-- Dinner Section -->
+<div class="menu-section" data-category="dinner">
+  <h2>Night Bites</h2>
+  <!-- <div class="menu-items"> -->
+
+
+    <div class="menu-item"
+    data-name="paneer-butter-masala"
+     data-type="veg"
+     data-price="99"
+     data-rating="4.6"
+     data-stock="in"
+     data-time="40"
+    >
+      <div class="img-container">
+        <img src="../../../assets/images/dinner/paneer-butter-masala.avif" alt="Paneer Butter Masala">
+      </div>
+    
+      <div class="description-button">
+        <div>
+          <h2>Paneer Butter Masala</h2>
+          <h2> ₹99</h2>
+          <h3>
+            Serves 1-2 | Soft paneer cubes cooked in a rich, buttery tomato-based gravy, seasoned with aromatic spices.  
+            <br> <strong>Add-ons:</strong> Extra Butter, Extra Paneer, Garlic Naan (+₹30 each).
+          </h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+            <span> 40-45 mins</span>
+          </h5>
+        </div>
+    
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-deatils">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Fish Curry -->
+<div class="menu-item"
+data-name="fish-curry"
+     data-type="N0n-veg"
+     data-price="600"
+     data-rating="5.0"
+     data-stock="in"
+     data-time="40"
+              >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/fish-curry.avif" alt="Fish Curry">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Fish Curry</h2>
+      <h2> ₹600</h2>
+      <h3>
+        Serves 1-2 | Traditional fish curry made with fresh fish, slow-cooked in a spiced, 
+        tangy, and flavorful gravy.  
+        <br> <strong>Add-ons:</strong> Extra Fish Piece, Steamed Rice, Pickles (+₹50 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 5.0 •</span>
+        <span> 40-45 mins</span>
+      </h5>
+    </div>
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Aloo Paratha -->
+<div class="menu-item"
+data-name="allo-paratha"
+     data-type="veg"
+     data-price="180"
+     data-rating="4.6"
+     data-stock="in"
+     data-time="40"
+       >
+  <div class="img-container">
+    <img src="../../../assets/images/breakfast/allo-paratha.jpg" alt="Aloo Paratha">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Aloo Paratha</h2>
+      <h2> ₹180</h2>
+      <h3>
+        Flaky, stuffed whole wheat flatbread filled with spiced mashed potatoes, 
+        served with butter, curd, and pickle.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+        <span> 40-45 mins</span>
+      </h5>
+    </div>
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Uttapam -->
+<div class="menu-item"
+data-name="uttpam"
+     data-type="veg"
+     data-price="160"
+     data-rating="4.1"
+     data-stock="in"
+     data-time="20"
+      >
+  <div class="img-container"   >
+    <img src="../../../assets/images/breakfast/uttpam.jpg" alt="Uttapam">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Uttapam</h2>
+      <h2> ₹160</h2>
+      <h3>
+        Thick, savory South Indian pancake made with fermented rice and lentil batter, 
+        topped with onions, tomatoes, and spices. Served with coconut chutney and sambar.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.1 •</span>
+        <span> 20-45 mins</span>
+      </h5>
+    </div>
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Besan Chilla -->
+<div class="menu-item"
+data-name="besan-chilla"
+     data-type="veg"
+     data-price="130"
+     data-rating="4.5"
+     data-stock="in"
+     data-time="15"
+      >
+  <div class="img-container">
+    <img src="../../../assets/images/breakfast/besan-chilla.avif" alt="Besan Chilla">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Besan Chilla</h2>
+      <h2> ₹130</h2>
+      <h3>
+        Golden, crispy gram flour pancake infused with spices and herbs, served with 
+        tangy mint chutney.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.5 •</span>
+        <span> 15-45 mins</span>
+      </h5>
+    </div>
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Fish Curry -->
+<div class="menu-item"
+data-name="fish-curry"
+     data-type="N0n-veg"
+     data-price="600"
+     data-rating="4.6"
+     data-stock="in"
+     data-time="40"
+    >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/fish-curry.avif" alt="Fish Curry">
+  </div>
+
+  <div class="description-button">
+    <div>
+      <h2>Fish Curry</h2>
+      <h2> ₹600</h2>
+      <h3>
+        Serves 1-2 | Traditional fish curry made with fresh fish, slow-cooked in a spiced, 
+        tangy, and flavorful gravy.  
+        <br> <strong>Add-ons:</strong> Extra Fish Piece, Steamed Rice, Pickles (+₹50 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+        <span> 40-45 mins</span>
+      </h5>
+    </div>
+
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Shahi Paneer -->
+<div class="menu-item"
+data-name="sahi-panner"
+     data-type="veg"
+     data-price="350"
+     data-rating="4.7"
+     data-stock="in"
+     data-time="20"
+       >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/sahi-panner.avif" alt="Shahi Paneer">
+  </div>
+  <div class="description-button">
+    <div>
+      <h2>Shahi Paneer</h2>
+      <h2> ₹350</h2>
+      <h3>
+        Serves 1-2 | A rich and creamy North Indian delight made with paneer, cashew, and saffron-infused gravy.
+        <br> <strong>Add-ons:</strong> Extra Paneer, Butter Naan, Malai (+₹40 each).
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.7 •</span>
+        <span> 10-35 mins</span>
+      </h5>
+    </div>
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Dal Makhani -->
+<div class="menu-item"
+data-name="tandoori mushroom"
+     data-type="veg"
+     data-price="280"
+     data-rating="4.9"
+     data-stock="in"
+     data-time="40"
+      >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/dal-makhni.jpeg" alt="Dal Makhani">
+  </div>
+  <div class="description-button">
+    <div>
+      <h2>Dal Makhani</h2>
+      <h2> ₹280</h2>
+      <h3>
+        Serves 1-2 | A classic Punjabi dish slow-cooked with black lentils, butter, and cream for a rich flavor.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.9 •</span>
+        <span> 40-45 mins</span>
+      </h5>
+    </div>
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Egg Curry -->
+<div class="menu-item"
+data-name="egg-curry"
+     data-type="N0n-veg"
+     data-price="260"
+     data-rating="4.2"
+     data-stock="in"
+     data-time="40"
+     >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/egg-curry.avif" alt="Egg Curry">
+  </div>
+  <div class="description-button">
+    <div>
+      <h2>Egg Curry</h2>
+      <h2> ₹260</h2>
+      <h3>
+        Serves 1-2 | A delicious and spicy Egg Curry made with boiled eggs cooked in a flavorful tomato and onion gravy.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.2 •</span>
+        <span> 40-45 mins</span>
+      </h5>
+    </div>
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Veg Biryani -->
+<div class="menu-item"
+data-name="veg-briyani"
+     data-type="veg"
+     data-price="280"
+     data-rating="4.6"
+     data-stock="in"
+     data-time="30"
+      >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/veg-briyani.jpg" alt="Veg Biryani">
+  </div>
+  <div class="description-button">
+    <div>
+      <h2>Veg Biryani</h2>
+      <h2> ₹280</h2>
+      <h3>
+        Serves 1-2 | A fragrant and flavorful Veg Biryani made with long-grain basmati rice, fresh vegetables, and aromatic spices.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="menu-item"
+data-name="chicken-briyani"
+     data-type="Non-veg"
+     data-price="199"
+     data-rating="4.1"
+     data-stock="in"
+     data-time="30"
+      >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/chicken-briyani.avif" alt="chicken Biryani">
+  </div>
+  <div class="description-button">
+    <div>
+      <h2>Chicken Biryani</h2>
+      <h2> ₹199</h2>
+      <h3>
+        Serves 1-2 | A royal dish of perfectly spiced Chicken Biryani, cooked with basmati rice, tender chicken, and traditional Indian spices.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Chicken Biryani -->
+
+<div class="menu-item"
+data-name="kadhi-pakoda"
+     data-type="veg"
+     data-price="149"
+     data-rating="4.1"
+     data-stock="in"
+     data-time="40"
+      >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/kadhi-pakoda.avif" alt="kadhi pakoda">
+  </div>
+  <div class="description-button">
+    <div>
+      <h2>Kadhi pakoda</h2>
+      <h2> ₹149</h2>
+      <h3>
+        Serves 1-2 | A comforting dish made with gram flour dumplings in a tangy yogurt-based curry, served with steamed rice.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+        <span> 30-45 mins</span>
+      </h5>
+    </div>
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Kadhi Pakoda -->
+
+<div class="menu-item"
+data-type="Non-veg"
+     data-price="149"
+     data-rating="4.5"
+     data-stock="in"
+     data-time="20"
+      >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/lamb-biryani.jpg" alt="lamb briyani">
+  </div>
+  <div class="description-button">
+    <div>
+      <h2>Lamb Biryani</h2>
+      <h2> ₹149</h2>
+      <h3>
+        Serves 1-2 | Aromatic, spicy, and mouth-watering Lamb Biryani with rich flavors, served with raita and salad.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+        <span> 20 - 25 mins</span>
+      </h5>
+    </div>
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="menu-item"
+data-name="veg-kolhapuri"
+     data-type="veg"
+     data-price="129"
+     data-rating="4.1"
+     data-stock="in"
+     data-time="20"
+
+      >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/veg-kolhapuri.jpeg" alt="veg Kolhapuri">
+  </div>
+  <div class="description-button">
+    <div>
+      <h2>Veg Kolhapuri</h2>
+      <h2> ₹129</h2>
+      <h3>
+        Serves 1-2 | A fiery and flavorful mixed vegetable curry, cooked with Kolhapuri spices, served with naan or rice.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+        <span> 20 - 25 mins</span>
+      </h5>
+    </div>
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="menu-item"
+data-name="rogan-josh"
+     data-type="veg"
+     data-price="129"
+     data-rating="4.2"
+     data-stock="in"
+     data-time="25"
+
+
+      >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/rogan-josh.webp" alt="rogan josh">
+  </div>
+  <div class="description-button">
+    <div>
+      <h2>Rogan Josh</h2>
+      <h2> ₹129</h2>
+      <h3>
+        Serves 2-3 | A rich and aromatic Kashmiri-style curry, slow-cooked with tender lamb in a flavorful gravy, served with steamed rice.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i> 4.6 •</span>
+        <span> 25 - 30 mins</span>
+      </h5>
+    </div>
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>
+
+ <div class="menu-item"
+data-name="garlic-butter-with-chicken-veggies"
+     data-type="Non-veg"
+     data-price="280"
+     data-rating="4.2"
+     data-stock="in"
+     data-time="30"
+    >
+  <div class="img-container">
+    <img src="../../../assets/images/dinner/garlic-butter-with-chicken-veggies.jpg" alt="Garlic Butter Chicken with Veggies">
+  </div>
+  <div class="description-button">
+    <div>
+      <h2>Garlic Butter Chicken with Veggies</h2>
+      <h2>₹280</h2>
+      <h3>
+        Serves 1-2 | Juicy grilled chicken tossed in a rich garlic butter sauce, served with sautéed fresh vegetables.
+      </h3>
+      <h5>
+        <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+        <span><i class="fa-solid fa-star" id="star"></i>  4.2 •</span>
+        <span>30-45 mins</span>
+      </h5>
+    </div>   
+    <div class="button-container">
+      <a href="">Add to Cart</a>
+      <a href="" class="more-details">Order Now</a>
+    </div>
+  </div>
+</div>  
+</div>
+
+</section>
+
+<!-- main -->
+
+
+<section class="menu-pagination">
+  <nav>
+   
+    <a href="../lunch/lunch.html"  target="_blank">   <i class="fa-solid fa-arrow-left"></i>  prev Page </a>
+    <a href="../brevages-and-shakes/brevages.html"  target="_blank">next Page  <i class="fa-solid fa-arrow-right"></i></a>
+   
+    
+  </nav>
+</section>
+
+<!-- footer -->
+<div id="footer-placeholder"></div>
+<!-- footer -->
+  <script>
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+    
+          // ✅ Callback function execute karo agar diya hai
+          if (callback) callback();
+        })
+        .catch(error => console.error(`Error loading ${file}:`, error));
+    }
+    
+    // ✅ Load Header & Footer with Correct Paths
+    loadComponent("header-placeholder", "../../../components/header/header.html", function() {
+      loadHeaderScript();
+    });
+    
+    loadComponent("footer-placeholder", "../../../components/footer/footer.html", function() {
+      loadFooterScript();
+    });
+    
+    // ✅ Correct Header Script Path
+    function loadHeaderScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/header/header.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+    // ✅ Correct Footer Script Path
+    function loadFooterScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/footer/footer.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+  </script>
+<script src="./dinner.js"></script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>brevages shakes</title>
+  <link rel="stylesheet" href="../dishes.css">
+   <!-- fontawesome script tag -->
+ <script src="https://kit.fontawesome.com/ba2faaa4dd.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="../../../components/header/header.css">
+<link rel="stylesheet" href="../../../components/footer/footer.css">
+
+</head>
+<body>
+    <!-- header -->
+<div id="header-placeholder"></div>
+<!-- header -->
+
+
+<!-- main -->
+<section>
+
+
+    <!-- search-bar -->
+    <div class="search-bar">
+      <i class="fas fa-search"  id="filter-serach"></i>
+  
+      <input type="text" placeholder="search foods..." id="search-text">
+    </div>
+
+
+    
+  <!-- filters -->
+  <div class="filters">
+    <div class="filter-group">
+    <h1 class="h1-font">Filter By</h1>
+    </div>
+
+   
+
+    <div class="filter-group">
+        <h3>Price Range</h3>
+        <select name="price">
+            <option value="under-300">Under ₹300</option>
+            <option value="above-300">Above ₹300</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <h3>Rating</h3>
+        <select name="ratings">
+            <option value="2-star">2★ & Above</option>
+            <option value="4-star">4★ & Above</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <h3>Stock Availability</h3>
+        <select name="availability">
+            <option value="sold-in">Sold-In</option>
+            <option value="sold-out">Sold-Out</option>
+        </select>
+    </div>
+
+
+    <div class="filter-group">
+    <h3>delivery Time</h3>
+    <select id="deliveryTimeFilter">
+        <option value="all">All</option>
+        <option value="fast">Fast Delivery (Under 30 mins)</option>
+        <option value="normal">Standard (30-60 mins)</option>
+        <option value="slow">Scheduled (1+ hour)</option>
+    </select>
+    </div>
+
+      
+
+</div>
+
+  
+  
+<!-- Beverages & Shakes Section -->
+<div class="menu-section" data-category="beverages-shakes">
+  <h2>Frosty Delights</h2>
+
+  <!-- <div class="menu-items"> -->
+    <div class="menu-item"
+    data-name="chocolate peanut butter shake"
+     data-price="49"
+     data-rating="4.6"
+     data-stock="in"
+     data-time="40">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/peanut-butter-shake.jpg" alt="chocolate peanut butter shake">
+      </div>
+      <div class="description-button">
+        <div>
+          <h2>Chocolate Peanut Butter Shake</h2>
+          <h2> ₹49</h2>
+          <h3>
+            300ml | A rich and creamy shake combining the smooth taste of chocolate and peanut butter for a delightful treat.
+          </h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star" id="star"></i>  4.6 •</span>
+            <span> 40-45 mins</span>
+          </h5>
+        </div>
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-deatils">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item"
+    data-name="Guava shake"
+     data-price="39"
+     data-rating="4.2"
+     data-stock="in"
+     data-time="40">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/Guava-shake.jpg" alt="guava shake">
+      </div>
+      <div class="description-button">
+        <div>
+          <h2>Guava Shake</h2>
+          <h2> ₹39</h2>
+          <h3>
+            300ml | A refreshing and nutrient-rich shake made from fresh guavas, packed with natural sweetness and health benefits.
+          </h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star" id="star"></i>  4.2 •</span>
+            <span> 40-50 mins</span>
+          </h5>
+        </div>
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-deatils">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item"
+    data-name="chocolate apple shake"
+     data-price="39"
+     data-rating="4.6"
+     data-stock="in"
+     data-time="40">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/chocolate-apple-shake.jpeg" alt="chocolate apple shake">
+      </div>
+      <div class="description-button">
+        <div>
+          <h2>Chocolate Apple Shake</h2>
+          <h2> ₹39</h2>
+          <h3>
+            300ml | A unique and delicious blend of fresh apples and rich chocolate, creating a smooth and delightful shake.
+          </h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star" id="star"></i>  4.6 •</span>
+            <span> 40-45 mins</span>
+          </h5>
+        </div>
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-deatils">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item"
+    data-name="Coconut shake"
+     data-price="39"
+     data-rating="3.6"
+     data-stock="in"
+     data-time="30">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/cocunut-skake.jpg" alt="coconut shake">
+      </div>
+      <div class="description-button">
+        <div>
+          <h2>Coconut Shake</h2>
+          <h2> ₹39</h2>
+          <h3>
+            300ml | A rich, smooth, and tropical coconut shake made with fresh coconut milk and natural sweetness.
+          </h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star" id="star"></i>  3.6 •</span>
+            <span> 30-45 mins</span>
+          </h5>
+        </div>
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-deatils">Order Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item"
+    data-name="Cold coffee"
+     data-price="39"
+     data-rating="4.3"
+     data-stock="in"
+     data-time="40">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/cold-coffee.jpg" alt="cold coffee">
+      </div>
+    
+      <div class="description-button">
+        <div>
+          <h2>Cold Coffee</h2>
+          <h2> ₹39</h2>
+          <h3>
+            300ml | Chilled and refreshing cold coffee, perfect for coffee lovers.  
+            A smooth blend of milk and coffee with a creamy texture.  
+            <br> <strong>Add-ons:</strong> Chocolate syrup, Ice Cream (+₹20 each).
+          </h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star" id="star"></i>  4.3 •</span>
+            <span> 40-45 mins</span>
+          </h5>
+        </div>   
+    
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-deatils">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item"
+    data-name="vanilla shake"
+     data-price="39"
+     data-rating="4.2"
+     data-stock="in"
+     data-time="20">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/vanilla-shake.avif" alt="vanilla shake">
+      </div>
+    
+      <div class="description-button">
+        <div>
+          <h2>Vanilla Shake</h2>
+          <h2> ₹39</h2>
+          <h3>
+            300ml |  A rich and creamy vanilla shake made with pure vanilla essence.  
+            Smooth, thick, and delicious – a timeless classic.  
+            <br> <strong>Add-ons:</strong> Whipped Cream, Chocolate Chips (+₹25 each).
+          </h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star" id="star"></i>  4.2 •</span>
+            <span> 20-45 mins</span>
+          </h5>
+        </div>   
+    
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-deatils">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item"
+    data-name="Mango shake"
+     data-price="99"
+     data-rating="4.2"
+     data-stock="in"
+     data-time="40">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/mango-shake.jpg" alt="mango shake">
+      </div>
+    
+      <div class="description-button">
+        <div>
+          <h2>Mango Shake</h2>
+          <h2> ₹99</h2>
+          <h3>
+            300ml | A tropical delight made from fresh mangoes and creamy milk.  
+            The perfect summer refreshment for mango lovers.  
+            <br> <strong>Add-ons:</strong> Ice Cream, Honey (+₹30 each).
+          </h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star" id="star"></i>  4.2 •</span>
+            <span> 40-50 mins</span>
+          </h5>
+        </div>   
+    
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-deatils">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item"
+    data-name="chocolate Milkshake"
+     data-price="120"
+     data-rating="4.2"
+     data-stock="in"
+     data-time="30">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/choclate-milkshake.avif" alt="chocolate milkshake">
+      </div>
+    
+      <div class="description-button">
+        <div>
+          <h2>Chocolate Milkshake</h2>
+          <h2> ₹120</h2>
+          <h3>
+            300ml | Indulge in a rich and thick chocolate milkshake.  
+            Made with premium cocoa and fresh milk for a heavenly taste.  
+            <br> <strong>Add-ons:</strong> Choco Chips, Oreo Crumbs (+₹35 each).
+          </h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star" id="star"></i>  4.2 •</span>
+            <span> 30-35 mins</span>
+          </h5>
+        </div>   
+    
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-deatils">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item"
+    data-name="Lemonade"
+     data-price="80"
+     data-rating="4.8"
+     data-stock="in"
+     data-time="40">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/lemonade.jpg" alt="lemonade">
+      </div>
+      <div class="description-button">
+        <div>
+          <h2>Lemonade</h2>
+          <h2>₹80</h2>
+          <h3>
+            300ml |A refreshing summer drink with tangy lemon and cooling mint. <br> <strong>Add-ons:</strong> Honey, Soda (+₹15 each).</h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star"></i> 4.8 •</span>
+            <span>40-45 mins</span>
+          </h5>
+        </div>
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-details">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item"
+    data-name="Iced Tea"
+     data-price="90"
+     data-rating="4.9"
+     data-stock="in"
+     data-time="40">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/iced-tea.avif" alt="iced tea">
+      </div>
+      <div class="description-button">
+        <div>
+          <h2>Iced Tea</h2>
+          <h2>₹90</h2>
+          <h3>  300ml | A chilled and refreshing blend of tea and lemon, perfect for summer.</h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star"></i> 4.9 •</span>
+            <span>40-50 mins</span>
+          </h5>
+        </div>
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-details">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item"
+    data-name="Pineapple Shake"
+     data-price="49"
+     data-rating="4.6"
+     data-stock="in"
+     data-time="40">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/pinapple-shake.jpg" alt="pineapple shake">
+      </div>
+      <div class="description-button">
+        <div>
+          <h2>Pineapple Shake</h2>
+          <h2>₹49</h2>
+          <h3 >  300ml | A creamy and tropical pineapple delight, rich in flavor and nutrition.</h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star"></i> 4.6 •</span>
+            <span>40-50 mins</span>
+          </h5>
+        </div>
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-details">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item"
+    data-name="Strawberry shake"
+     data-price="110"
+     data-rating="4.6"
+     data-stock="in"
+     data-time="40">
+      <div class="img-container">
+        <img src="../../../assets/images/brevages-shakes/straberry-shake.avif" alt="strawberry shake">
+      </div>
+      <div class="description-button">
+        <div>
+          <h2>Strawberry Shake</h2>
+          <h2>₹110</h2>
+          <h3>   300ml |A sweet and creamy shake made with fresh strawberries.</h3>
+          <h5>
+            <span><i class="fa-solid fa-circle"></i> In Stock •</span>
+            <span><i class="fa-solid fa-star"></i> 4.6 •</span>
+            <span>40-50 mins</span>
+          </h5>
+        </div>
+        <div class="button-container">
+          <a href="">Add to Cart</a>
+          <a href="" class="more-details">Order Now</a>
+        </div>
+      </div>
+    </div>
+ 
+
+     </div>
+    <!-- </div> -->
+  <!-- </div> -->
+
+</section>
+
+<!-- main -->
+
+
+<section class="menu-pagination">
+  <nav>
+   
+    <a href="../dinner/dinner.html"  target="_blank">   <i class="fa-solid fa-arrow-left"></i>  prev Page </a>
+    <a href="../burger/burgur.html"  target="_blank">   <i class="fa-solid fa-arrow-right"></i>  next Page </a>
+    
+  </nav>
+</section>
+
+
+<!-- footer -->
+<div id="footer-placeholder"></div>
+<!-- footer -->
+  <script>
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+    
+          // ✅ Callback function execute karo agar diya hai
+          if (callback) callback();
+        })
+        .catch(error => console.error(`Error loading ${file}:`, error));
+    }
+    
+    // ✅ Load Header & Footer with Correct Paths
+    loadComponent("header-placeholder", "../../../components/header/header.html", function() {
+      loadHeaderScript();
+    });
+    
+    loadComponent("footer-placeholder", "../../../components/footer/footer.html", function() {
+      loadFooterScript();
+    });
+    
+    // ✅ Correct Header Script Path
+    function loadHeaderScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/header/header.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+    // ✅ Correct Footer Script Path
+    function loadFooterScript() {
+      const script = document.createElement("script");
+      script.src = "../../../components/footer/footer.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+  </script>
+<script src="./brevages.js"></script>
+</body>
+</html>

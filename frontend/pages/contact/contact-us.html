@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact-us</title>
+  <link rel="stylesheet" href="./contact-us.css">
+    <!-- fontawesome script tag -->
+    <script src="https://kit.fontawesome.com/ba2faaa4dd.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../components/header/header.css">
+
+    <!-- <link rel="stylesheet" href="../../components/footer/footer.css"> -->
+</head>
+<body>
+
+  <!-- header -->
+<div id="header-placeholder"></div>
+
+  <section>
+
+    <div class="contact-us">
+
+      <div class="contact">
+        
+        <div class="contact-form">
+         
+         
+         
+           <form action="">
+           
+            <h2>Contact Us</h2>
+             <input type="text" name="name" required placeholder="your name">
+
+             <input type="email" name="email" required placeholder="your email">
+
+             <textarea name="message" required placeholder="your message"></textarea>
+
+             <button type="submit">Send Message</button>
+                </form>
+      </div>
+      <div class="get-in-touch">
+
+       <h2>Get In Touch</h2>
+       <p><i class="fa fa-map-marker"></i> 123 Food Hub, Muzaffarpur, Bihar</p>
+       <p><i class="fa fa-phone"></i> +74 93044803</p>
+       <p><i class="fa fa-envelope"></i> contact@foodhub.com</p>
+       <div class="social-icons">
+           <a href="#"><i class="fa fa-facebook" ></i></a>
+           <a href="#"><i class="fa fa-instagram"></i></a>
+           <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+ </div>
+
+
+      </div>
+        
+         
+  </div>
+
+   <!-- Copyright -->
+
+
+</section>
+<div class="footer-bottom">
+  <p>© <span id="year"></span> foodhub. All Rights Reserved.</p>
+  <!-- <button id="backToTop">↑ Back to Top</button> -->
+</div>
+
+<!-- footer -->
+  <script>
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+    
+          // ✅ Callback function execute karo agar diya hai
+          if (callback) callback();
+        })
+        .catch(error => console.error(`Error loading ${file}:`, error));
+    }
+    
+    // ✅ Load Header & Footer with Correct Paths
+    loadComponent("header-placeholder", "../../components/header/header.html", function() {
+      loadHeaderScript();
+    });
+    
+   
+    
+    // ✅ Correct Header Script Path
+    function loadHeaderScript() {
+      const script = document.createElement("script");
+      script.src = "../../components/header/header.js"; // ✅ Correct path
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+    
+ 
+    
+  </script>
+
+  <script src="contact-us.js"></script>
+
+</body>
+</html>
