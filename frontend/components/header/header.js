@@ -20,7 +20,7 @@ setTimeout(() => {
 
   console.log("🔹 Current Page:", currentPage);
 
-  const menuPages = ["starter.html", "lunch.html", "dinner.html", "breakfast.html", "brevages.html"];
+  const menuPages = ["starter.html", "lunch.html", "dinner.html", "breakfast.html", "brevages.html","burgur.html","cake-&-pastry.html","pizza.html","fast-food.html"];
 
   // 🔴 Highlight "Our Menu" if on any menu subpage
   if (menuPages.includes(currentPage)) {

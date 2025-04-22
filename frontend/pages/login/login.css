@@ -143,7 +143,7 @@ text-transform: capitalize;
 .fa-eye{
 
   position: absolute;
-  top: 25%;
+  top: 34%;
   left: 90%;
   display: none;
   cursor: pointer;
@@ -152,7 +152,7 @@ text-transform: capitalize;
 
 .fa-eye-slash{
   position: absolute;
-  top: 25%;
+  top: 34%;
   left: 90%;
   cursor: pointer;
 } 

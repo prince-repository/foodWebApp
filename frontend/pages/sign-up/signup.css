@@ -143,7 +143,7 @@ text-transform: capitalize;
 #confirm-password-eye{
 
   position: absolute;
-  top: 52%;
+  top: 64%;
   left: 90%;
   display: none;
   cursor: pointer;
@@ -152,14 +152,14 @@ text-transform: capitalize;
 
 #confirm-password-eye-slash{
   position: absolute;
-  top: 52%;
+  top: 64%;
   left: 90%;
   cursor: pointer;
 } 
 
 #create-password-eye{
   position: absolute;
-  top: 35%;
+  top: 44%;
   left: 90%;
   display: none;
   cursor: pointer;
@@ -169,7 +169,7 @@ text-transform: capitalize;
 
 #create-password-eye-slash{
   position: absolute;
-  top: 35%;
+  top: 44%;
   left: 90%;
   cursor: pointer;
 }

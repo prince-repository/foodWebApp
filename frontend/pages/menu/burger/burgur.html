@@ -6,6 +6,8 @@
     <title>pizza</title>
     <script src="https://kit.fontawesome.com/ba2faaa4dd.js"></script>
     <link rel="stylesheet" href="../pizza/pizza.css" />
+    <link rel="stylesheet" href="../../../components/header/header.css">
+    <link rel="stylesheet" href="../../../components/footer/footer.css">
   </head>
   <body>
     <div id="header-placeholder"></div>
@@ -393,50 +395,50 @@
 <!-- footer -->
 <div id="footer-placeholder"></div>
 <!-- footer -->
-  <script>
-    function loadComponent(id, file, callback) {
-      fetch(file)
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById(id).innerHTML = data;
-    
-          // ✅ Callback function execute karo agar diya hai
-          if (callback) callback();
-        })
-        .catch(error => console.error(`Error loading ${file}:`, error));
-    }
-    
-    // ✅ Load Header & Footer with Correct Paths
-    loadComponent("header-placeholder", "../../../components/header/header.html", function() {
-      loadHeaderScript();
-    });
-    
-    loadComponent("footer-placeholder", "../../../components/footer/footer.html", function() {
-      loadFooterScript();
-    });
-    
-    // ✅ Correct Header Script Path
-    function loadHeaderScript() {
-      const script = document.createElement("script");
-      script.src = "../../../components/header/header.js"; // ✅ Correct path
-      script.defer = true;
-      document.body.appendChild(script);
-    }
-    
-    // ✅ Correct Footer Script Path
-    function loadFooterScript() {
-      const script = document.createElement("script");
-      script.src = "../../../components/footer/footer.js"; // ✅ Correct path
-      script.defer = true;
-      document.body.appendChild(script);
-    }
-    
-  </script>
+<script>
+  function loadComponent(id, file, callback) {
+    fetch(file)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById(id).innerHTML = data;
+  
+        // ✅ Callback function execute karo agar diya hai
+        if (callback) callback();
+      })
+      .catch(error => console.error(`Error loading ${file}:`, error));
+  }
+  
+  // ✅ Load Header & Footer with Correct Paths
+  loadComponent("header-placeholder", "../../../components/header/header.html", function() {
+    loadHeaderScript();
+  });
+  
+  loadComponent("footer-placeholder", "../../../components/footer/footer.html", function() {
+    loadFooterScript();
+  });
+  
+  // ✅ Correct Header Script Path
+  function loadHeaderScript() {
+    const script = document.createElement("script");
+    script.src = "../../../components/header/header.js"; // ✅ Correct path
+    script.defer = true;
+    document.body.appendChild(script);
+  }
+  
+  // ✅ Correct Footer Script Path
+  function loadFooterScript() {
+    const script = document.createElement("script");
+    script.src = "../../../components/footer/footer.js"; // ✅ Correct path
+    script.defer = true;
+    document.body.appendChild(script);
+  }
+  
+</script>
 
     <script src="pizza.js"></script>
   </body>

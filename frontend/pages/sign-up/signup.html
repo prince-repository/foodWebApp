@@ -38,7 +38,7 @@
         <span class="error-message"></span>
         
         <button type="submit" class="signup-btn">Sign Up</button>
-        <p class="login-link">Already have an account? <a href="/pages/login/login.html">Login</a></p>
+        <p class="login-link">Already have an account? <a href="../..//pages/login/login.html">Login</a></p>
         
         <!-- <p class="signup-with">Sign up with</p>
         <div class="social-links">
@@ -67,13 +67,13 @@
         .catch(error => console.error(`Error loading ${file}:`, error));
     }
     
-    loadComponent("header-placeholder", "./frontend/components/header/header.html", function() {
+    loadComponent("header-placeholder", "../../components/header/header.html", function() {
       loadHeaderScript();
     });
     
     function loadHeaderScript() {
       const script = document.createElement("script");
-      script.src = "./frontend/components/header/header.js";
+      script.src = "../../components/header/header.js";
       script.defer = true;
       document.body.appendChild(script);
     }
