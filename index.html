@@ -22,9 +22,6 @@
  
 <link rel="stylesheet" href="./frontend/home.css">
 
-<!-- <link rel="stylesheet" href="./components/header/header.css">
-<link rel="stylesheet" href="./components/footer/footer.css"> -->
-
 
 
 
@@ -140,7 +137,7 @@
 
     <div>
       <!-- <a href=""><img src="/project-infinity/frontend/assets/images/food-items/chaat.png" alt="chaat"  loading="lazy"></a> -->
-      <a href="./frontend/assets/images/fast-food/chaat.jpg">  <img src="./frontend/assets/images/food-items/chaat.png" alt="chaat" loading="lazy"> </a>
+      <a href="./frontend/pages/menu/fast-food/fast-food.html">  <img src="./frontend/assets/images/food-items/chaat.png" alt="chaat" loading="lazy"> </a>
       <h5>chaat</h5>
     </div>
 
@@ -549,18 +546,18 @@
     }
     
     // ✅ Load Header & Footer with Correct Paths
-    loadComponent("header-placeholder", "./frontend/components/header/header.html", function() {
+    loadComponent("header-placeholder", "frontend/components/header/header.html", function() {
       loadHeaderScript();
     });
     
-    loadComponent("footer-placeholder", "./frontend/components/footer/footer.html", function() {
+    loadComponent("footer-placeholder", "frontend/components/footer/footer.html", function() {
       loadFooterScript();
     });
     
     // ✅ Correct Header Script Path
     function loadHeaderScript() {
       const script = document.createElement("script");
-      script.src = "./frontend/components/header/header.js"; // ✅ Correct path
+      script.src = "frontend/components/header/header.js"; // ✅ Correct path
       script.defer = true;
       document.body.appendChild(script);
     }
@@ -568,7 +565,7 @@
     // ✅ Correct Footer Script Path
     function loadFooterScript() {
       const script = document.createElement("script");
-      script.src = "./frontend/components/footer/footer.js"; // ✅ Correct path
+      script.src = "frontend/components/footer/footer.js"; // ✅ Correct path
       script.defer = true;
       document.body.appendChild(script);
     }
