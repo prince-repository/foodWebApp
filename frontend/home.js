@@ -58,7 +58,7 @@ var swiper = new Swiper(".mySwiper", {
 const countdownElements = document.querySelectorAll('.countdown');
 
 // 🕒 Offer End Time (Change as needed)
-const offerEndTime = new Date("April 20, 2025 23:59:59").getTime();
+const offerEndTime = new Date("may 20, 2025 23:59:59").getTime();
 console.log(offerEndTime +" offer end time");
 
 
