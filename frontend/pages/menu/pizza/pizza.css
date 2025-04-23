@@ -439,14 +439,20 @@ text-align: center;
 }
 
 .menu-pagination nav a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
 color: white;
 background: red;
-font-size: 15px;
+font-size: 13px;
 font-weight: bolder;
-padding: 10px 40px;
+/* padding: 5px 20px; */
 transition: all 0.4s ease-in-out;
-
+width: 100px; height:35px ;
+&:hover{
+  background-color: darkred;
+}
  }
 
 
