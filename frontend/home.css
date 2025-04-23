@@ -441,7 +441,7 @@ column-gap: 50px;
 }
 
 .offer-card .food-name{
-  font-size: 20px;
+  font-size: 28px;
   color: grey;
 }
 
@@ -455,24 +455,24 @@ column-gap: 50px;
 }
 
 .offer-card .rating-time .rating #rating-number,.delivery-time{
-  font-size: 15px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .offer-card .rating-time .rating .timer {
-  font-size: 15px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .offer-card .rating-time .rating .countdown{
-  font-size: 18px;
+  font-size: 22px;
 }
 
 /* Offer Text */
 .offer-card p {
   flex-grow: 1; 
   padding: 10px;
-  font-size: 16px;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -1476,7 +1476,7 @@ padding: 3rem 0;
     .offer-card img {
       width: 100%;
      /* aspect-ratio: 3/1; */
-     max-width: 400px;
+     /* max-width: 400px; */
       object-fit: cover; 
     
       border-radius: 10px 10px 0 0;
@@ -1542,7 +1542,7 @@ padding: 3rem 0;
 }
 
 .testimonial img {
-  width: 50%; 
+  width: 60%; 
   height: 60%;
   aspect-ratio: 16/9;
   object-fit: cover;
@@ -1559,13 +1559,13 @@ border-radius:25% 2% 25% 2% ;
 }
 
 .testimonial-content{
-  padding: 4px ;
+  padding: 0px ;
 }
 
 
 .testimonial-content .review{
-line-height:0.5rem;
-font-size: 10px;
+line-height:0.4rem;
+font-size: 5px;
 /* font-family: serif; */
 }
 
